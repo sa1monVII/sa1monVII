@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Вариант номер 4</title>
+  <style>
+    
+    
+    * { box-sizing: border-box; }
+    
+    
+    body 
+    {
+      font-family: Arial, Helvetica, sans-serif;
+      color: black;
+    }
+
+
+    h1 
+    {
+      margin-bottom: 50px;
+      text-align: center;
+    }
+
+    
+    .seasons 
+    {
+      width: max-content;
+      margin: 0 auto 60px;
+      font-size: 30px;
+    }
+
+
+    .season 
+    {
+      display: flex;
+      gap: 20px;
+    }
+   
+
+    .months 
+    {
+      margin-left: 100px;
+      list-style-type: circle;
+    }
+
+
+    .diagram 
+    {
+      width: min(516px, 100%);
+      margin: 0 auto;
+      padding: 5px;
+      border: 2px solid black;
+      display: grid;
+      grid-template-columns: 80px minmax(0, 1fr) 80px;
+      gap: 5px;
+      min-height: 280px;
+    }
+
+
+    .side {border: 2px solid black;}
+
+
+    .middle {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      grid-template-rows: repeat(3, 1fr);
+      gap: 5px;
+    }
+
+
+    .cell {border: 2px solid black;}
+
+
+    .wide { grid-column: 2 / span 2; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Вариант 4</h1>
+    <section class="seasons">
+      <div class="season"><a>у.</a><a>Зима</a></div>
+      <div class="season"><a>z.</a><a>Весна</a></div>
+      <div class="season"><a>аа.</a><a>Лето</a></div>
+      <div class="season"><a>аb.</a><a>Осень</a></div>
+      <ul class="months">
+        <li>Сентябрь</li>
+        <li>Октябрь</li>
+        <li>Ноябрь</li>
+      </ul>
+    </section>
+    <section class="diagram">
+      <div class="side"></div>
+      <div class="middle">
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+
+        <div class="cell"></div>
+        <div class="cell wide"></div>
+        <div class="cell"></div>
+
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+      </div>
+      <div class="side"></div>
+    </section>
+  </main>
+  <div style="text-align: center; margin-top: 100px;">
+    <p><a href="index.html">На главную страницу</a></p></div>
+</body>
+</html>

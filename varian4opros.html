@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Вариант номер 4</title>
+    <style>
+        body 
+        {
+            font-family: Arial, sans-serif;
+            padding: 50px;
+        }
+
+
+        .page 
+        {
+            width: 450px;
+            margin: 0 auto;
+        }
+
+
+        h3 
+        {
+            text-align: center;
+            font-size: 20px;
+        }
+
+
+        .city-input 
+        {
+            width: 235px;
+            height: 35px;
+            box-sizing: border-box;
+            font-size: 25px;
+            margin-bottom: 35px;
+        }
+
+
+        .choices 
+        {
+            font-size: 27px;
+            line-height: 1.5;
+            margin-bottom: 35px;
+        }
+
+
+        .choices label {display: block;}
+
+
+        .choices input 
+        {
+            width: 20px;
+            height: 20px;
+            vertical-align: middle;
+            margin-right: 10px;
+        }
+
+
+        .file-input 
+        {
+            font-size: 20px;
+            margin: 12px 0 38px;
+        }
+
+
+        .buttons {margin-bottom: 50px;}
+
+
+        button 
+        {
+            font-size: 20px;
+            padding: 8px 16px;
+            margin-right: 12px;
+        }
+
+
+        .diagram 
+        {
+            width: 400px;
+            height: 400px;
+            background: #cbcaca;
+            border: 2px solid black;
+            border-radius: 55px;
+            position: relative;
+            margin: 0 auto;
+        }
+
+
+        .dot 
+        {
+            width: 40px;
+            height: 40px;
+            background: red;
+            border: 2px solid black;
+            border-radius: 50%;
+            position: absolute;
+            box-sizing: border-box;
+        }
+
+
+        .dot-top 
+        {
+            top: 18px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+
+        .dot-left 
+        {
+            left: 18px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+
+        .dot-right 
+        {
+            right: 18px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+
+        .dot-bottom 
+        {
+            bottom: 18px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+
+        .plus-vertical 
+        {
+            width: 13px;
+            height: 195px;
+            background: black;
+            position: absolute;
+            left: 50%;
+            top: 38px;
+            transform: translateX(-50%);
+        }
+
+
+        .plus-horizontal 
+        {
+            width: 150px;
+            height: 13px;
+            background: black;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        
+    </style>
+</head>
+<body>
+    <main class="page">
+        <h3>Вариант 4</h3>
+
+        <form>
+            <input class="city-input" type="text" value="Новосибирск">
+
+            <div class="choices">
+                <label><input type="radio" name="city">Омск</label>
+                <label><input type="radio" name="city" checked>Новосибирск</label>
+                <label><input type="radio" name="city">Томск</label>
+            </div>
+
+            <div class="choices">
+                <label><input type="checkbox">Омск</label>
+                <label><input type="checkbox" checked>Новосибирск</label>
+                <label><input type="checkbox">Томск</label>
+            </div>
+
+            <input class="file-input" type="file">
+
+            <div class="buttons">
+                <button type="submit">Отправить</button>
+                <button type="reset">Сбросить</button>
+            </div>
+        </form>
+
+        <div class="diagram">
+            <div class="dot dot-top"></div>
+            <div class="dot dot-left"></div>
+            <div class="dot dot-right"></div>
+            <div class="dot dot-bottom"></div>
+
+            <div class="plus-vertical"></div>
+            <div class="plus-horizontal"></div>
+        </div>
+    </main>
+        <div style="text-align: center; margin-top: 100px;">
+        <p><a href="index.html">На главную страницу</a></p></div>
+</body>
+</html>

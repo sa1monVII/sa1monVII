@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ReSai Store - стиль и технологии</title>
+<style>
+:root
+{
+    --dark: #19191b;
+    --gray: #696871;
+    --blue: #5454d4;
+}
+
+header img 
+{
+    max-height: 80px;
+    width: 300px;
+}
+
+
+body
+{
+    font-family: 'Doppio One', sans-serif;
+     
+}
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+
+.XD
+{
+    padding-block: 10px;
+}
+
+
+.header__kraia
+{
+    max-width: 1800px;
+    margin-inline: auto;
+}
+
+
+.header__nav
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.header__list
+{
+    display: flex;
+    list-style: none;
+    gap: 110px;
+    align-items: center;
+}
+
+
+.header__list-link
+{
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: var(--gray);
+    transition: color 0.3s;
+}
+
+
+.header__list-link.active
+{
+   padding-bottom: 3px;
+}
+
+
+.header__list-link:hover
+{
+   color: var(--dark) 
+}
+
+
+.header__button
+{
+    font-weight: 700;
+    font-size: 17px;
+    letter-spacing: -0.53px;
+    color: white;
+    padding: 19px 59px;
+    background: var(--blue);
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+
+.header__button:hover
+{
+    opacity: 95%;
+}
+
+
+ul
+{
+    text-decoration: none;
+}
+
+
+a
+{
+    text-decoration: none;
+}
+
+
+.hero
+{
+    padding-block: 70px;
+}
+
+
+.parent
+{
+  text-align: center;
+}
+
+
+
+.center-img 
+{
+    display: block;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+</style>
+</head>
+<body>
+    <header class="XD">
+        <div class="header__kraia">
+            <nav class="header__nav">
+                <img src ="images/shapka.svg" alt = "ReSai Store">
+                <ul class="header__list">
+                    <li class="header__list-item">
+                        <a class="header__list-link active" href="index3.html">AirPods</a>
+                    </li>
+                    <li class="header__list-item">
+                        <a class="header__list-link" href="/">AppleWatch</a>
+                    </li>
+                    <li class="header__list-item">
+                        <a class="header__list-link" href="/">Сумки Мужские</a>
+                    </li>
+                    <li class="header__list-item">
+                        <a class="header__list-link" href="/">Сумки Женские</a>
+                    </li>
+                </ul>
+               <a class="header__button" href="/">Регистрация</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <selection class="hero">
+                <img class="center-img " src="https://i.postimg.cc/ZRqDww9b/oblaka1.jpg"  width="1800" height="900" alt="ReSai Store">
+        </selection>
+    </main>
+</body>
+</html>
